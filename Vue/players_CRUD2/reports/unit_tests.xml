@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="22" failures="0" errors="0" time="1.352">
+    <testsuite name="components/__tests__/AddPlayer.test.js" timestamp="2024-01-25T09:58:01.455Z" hostname="DESKTOP-O6RG1P5" tests="2" failures="0" errors="0" skipped="0" time="0.05">
+        <testcase classname="components/__tests__/AddPlayer.test.js" name="AddPlayer &gt; emits an &quot;add-player&quot; event with the input value when the form is submitted" time="0.041">
+        </testcase>
+        <testcase classname="components/__tests__/AddPlayer.test.js" name="AddPlayer &gt; clears the input when the form is submitted" time="0.008">
+        </testcase>
+    </testsuite>
+    <testsuite name="components/__tests__/AuthUser.test.js" timestamp="2024-01-25T09:58:01.459Z" hostname="DESKTOP-O6RG1P5" tests="6" failures="0" errors="0" skipped="0" time="0.085">
+        <testcase classname="components/__tests__/AuthUser.test.js" name="Link and button text &gt; Link text is &quot;Logout&quot;, when isLoggedIn is true" time="0.031">
+        </testcase>
+        <testcase classname="components/__tests__/AuthUser.test.js" name="Link and button text &gt;  &quot;Go to register&quot; by default in link, &quot;login&quot; by default in button" time="0.011">
+        </testcase>
+        <testcase classname="components/__tests__/AuthUser.test.js" name="Link and button text &gt; Text is &quot;Go to login&quot; when isLoggedIn is false and Link is clicked once, &quot;register&quot; in button" time="0.011">
+        </testcase>
+        <testcase classname="components/__tests__/AuthUser.test.js" name="Logout: Emited events &gt; emits &quot;logout&quot; event when isLoggedIn is true and the logout link is clicked" time="0.006">
+        </testcase>
+        <testcase classname="components/__tests__/AuthUser.test.js" name="submit &gt; emits &quot;login&quot; event with username and password when isLogin is true" time="0.013">
+        </testcase>
+        <testcase classname="components/__tests__/AuthUser.test.js" name="submit &gt; emits &quot;register&quot; event with username and password when isLogin is false" time="0.011">
+        </testcase>
+    </testsuite>
+    <testsuite name="components/__tests__/ListPlayer.test.js" timestamp="2024-01-25T09:58:01.462Z" hostname="DESKTOP-O6RG1P5" tests="4" failures="0" errors="0" skipped="0" time="0.056">
+        <testcase classname="components/__tests__/ListPlayer.test.js" name="ListPlayer &gt; renders a list item with the player&apos;s id as its id" time="0.033">
+        </testcase>
+        <testcase classname="components/__tests__/ListPlayer.test.js" name="ListPlayer &gt; displays the player name inside the anchor element" time="0.007">
+        </testcase>
+        <testcase classname="components/__tests__/ListPlayer.test.js" name="ListPlayer &gt; emits a &quot;player-clicked&quot; event with the player id when the player is clicked" time="0.009">
+        </testcase>
+        <testcase classname="components/__tests__/ListPlayer.test.js" name="ListPlayer &gt; anchor should be focusable via the keyboard (by pressing the tab key)" time="0.005">
+        </testcase>
+    </testsuite>
+    <testsuite name="components/__tests__/ListPlayers.test.js" timestamp="2024-01-25T09:58:01.463Z" hostname="DESKTOP-O6RG1P5" tests="3" failures="0" errors="0" skipped="0" time="0.059">
+        <testcase classname="components/__tests__/ListPlayers.test.js" name="ListPlayers &gt; renders a list with id &quot;players-list&quot;" time="0.038">
+        </testcase>
+        <testcase classname="components/__tests__/ListPlayers.test.js" name="ListPlayers &gt; renders a ListPlayer for each player in the players prop" time="0.009">
+        </testcase>
+        <testcase classname="components/__tests__/ListPlayers.test.js" name="ListPlayers &gt; Listen for &apos;player-clicked&apos; events from the ListPlayer component, and call the getPlayer prop function with the id of the clicked player as an argument." time="0.009">
+        </testcase>
+    </testsuite>
+    <testsuite name="components/__tests__/RequestStatus.test.js" timestamp="2024-01-25T09:58:01.464Z" hostname="DESKTOP-O6RG1P5" tests="2" failures="0" errors="0" skipped="0" time="0.05">
+        <testcase classname="components/__tests__/RequestStatus.test.js" name="RequestStatus component &gt; should render the component, inside which is an element with id &apos;request-status&apos;" time="0.042">
+            <system-err>
+[Vue warn]: Missing required prop: &quot;status&quot; 
+  at &lt;RequestStatus ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="components/__tests__/RequestStatus.test.js" name="RequestStatus component &gt; should render the component with the correct status" time="0.007">
+            <system-err>
+[Vue warn]: Missing required prop: &quot;status&quot; 
+  at &lt;RequestStatus ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="components/__tests__/SelectedPlayer.test.js" timestamp="2024-01-25T09:58:01.465Z" hostname="DESKTOP-O6RG1P5" tests="5" failures="0" errors="0" skipped="0" time="0.087">
+        <testcase classname="components/__tests__/SelectedPlayer.test.js" name="SelectedPlayer &gt; displays the selected player information when a player is passed as a prop with correct ui" time="0.052">
+        </testcase>
+        <testcase classname="components/__tests__/SelectedPlayer.test.js" name="SelectedPlayer &gt; should not render if selected player is null" time="0.009">
+        </testcase>
+        <testcase classname="components/__tests__/SelectedPlayer.test.js" name="SelectedPlayer &gt; emits a &quot;delete-player&quot; event with the player id when the delete button is clicked" time="0.009">
+        </testcase>
+        <testcase classname="components/__tests__/SelectedPlayer.test.js" name="SelectedPlayer &gt; emits a &quot;put-player&quot; event with the updated player active state when the update button is clicked" time="0.008">
+        </testcase>
+        <testcase classname="components/__tests__/SelectedPlayer.test.js" name="SelectedPlayer &gt; should not call handleUpdate if checkbox is clicked twice (aka player state is not changed)" time="0.009">
+        </testcase>
+    </testsuite>
+</testsuites>
